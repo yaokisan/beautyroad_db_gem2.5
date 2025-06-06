@@ -1,6 +1,5 @@
 import { createBrowserClient } from "@supabase/ssr";
-
-import { Database } from "../supabase";
+import { Database } from "@/types/supabase";
 
 // 汎用的に any を使用していますが、Database 型を用意すると型安全になります。
 export const supabase = createBrowserClient<Database>(
